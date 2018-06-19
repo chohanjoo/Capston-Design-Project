@@ -66,7 +66,7 @@ public class CreateJavaCode {
 
 			if (file.isFile() && file.canWrite()) {
 
-				bufferedWriter.write(classInfo.getAccess() + "class " + classInfo.getClassname());
+				bufferedWriter.write(classInfo.getAccess() + " "+ "class " + classInfo.getClassname());
 
 				String string = " extends ";
 				for (int i = 0; i < inheritanceRelation.getInheritancenum(); ++i) {
